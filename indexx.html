@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Light</title>
+    <link rel="stylesheet" href="stail2.css">
+</head>
+<body>
+    <div id="controlPanel">
+        <h1 id="stopButton" class="button">Stop</h1>
+        <h1 id="slowButton" class="button">Slow</h1>
+        <h1 id="goButton" class="button">Go</h1>
+      </div>
+      <div id="traffic-light">
+        <div id="stopLight" class="bulb"></div>
+        <div id="slowLight" class="bulb"></div>
+        <div id="goLight" class="bulb"></div>
+      </div>
+
+      <script >
+let stopButton1 = document.getElementById("stopButton");
+
+let stopLight1 = document.getElementById("stopLight");
+
+stopButton1.addEventListener("click", function(){
+
+    stopLight1.style.backgroundColor ="red";
+    stopLight2.style.backgroundColor ="";
+    stopLight3.style.backgroundColor ="";
+
+});
+
+
+let stopButton2 = document.getElementById("slowButton");
+
+let stopLight2 = document.getElementById("slowLight");
+
+stopButton2.addEventListener("click", function(){
+
+    stopLight2.style.backgroundColor ="orange";
+    stopLight1.style.backgroundColor ="";
+    stopLight3.style.backgroundColor ="";
+
+});
+
+
+let stopButton3 = document.getElementById("goButton");
+
+let stopLight3 = document.getElementById("goLight");
+
+stopButton3.addEventListener("click", function(){
+
+    stopLight3.style.backgroundColor ="green";
+    stopLight2.style.backgroundColor ="";
+    stopLight1.style.backgroundColor ="";
+
+});
+
+
+
+ </script>
+</body>
+</html>
